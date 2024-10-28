@@ -5,7 +5,7 @@
         int[] numbers = new int[10];
         for (int i = 0; i < numbers.Length; i++)
         {
-            numbers[i] = i + 1;
+            numbers[i] = i * 2;
         }
 
         foreach (int number in numbers)
@@ -23,6 +23,9 @@
             newNumbers[i] = numbers[i];
         }
         newNumbers[numbers.Length] = input;
+        
+        // sort the array in descending order
+        Array.Sort(newNumbers);
         for (int i = newNumbers.Length - 1; i >= 0; i--)
         {
             Console.WriteLine(newNumbers[i]);
