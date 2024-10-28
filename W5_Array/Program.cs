@@ -22,7 +22,8 @@
         
         // sort the array in descending order
         Array.Sort(numbers);
-        for (int i = numbers.Length - 1; i >= 0; i--)
+        Array.Reverse(numbers);
+        for (int i = 0; i < numbers.Length; i++)
         {
             Console.WriteLine(numbers[i]);
         }
